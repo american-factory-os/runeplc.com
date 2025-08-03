@@ -23,6 +23,8 @@
       padding: 40px;
       border-radius: 8px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      max-width: 90%;
+      box-sizing: border-box;
     }
 
     .logo {
@@ -51,13 +53,25 @@
       color: #bbb;
     }
 
-    a {
-      color: #03a9f4;
-      text-decoration: none;
-    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
 
-    a:hover {
-      text-decoration: underline;
+      .logo {
+        font-size: 36px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -65,8 +79,7 @@
   <div class="container">
     <div class="logo">ᚱ</div>
     <h1>Rune PLC</h1>
-    <p>Cutting-edge automation meets industrial precision.</p>
-    <p><a href="https://github.com/runeplc">View on GitHub</a></p>
+    <p>Automation software lags, stuck in the past.<br>Rune delivers big tech’s edge to manufacturing, fast.</p>
   </div>
 </body>
 </html>
